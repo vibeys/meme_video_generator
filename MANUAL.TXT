@@ -1,0 +1,98 @@
+# Automatic Meme Video Generator
+
+A Python-based tool that automatically converts Reddit stories into short-form videos. It combines AI text-to-speech narration, subtitles, and gameplay footage to create ready-to-post videos for platforms like TikTok, Instagram Reels, and YouTube Shorts.
+
+## Features
+
+- **Story Input:** Paste a Reddit story manually or provide it through a `.txt` file.
+- **AI Voice Narration:** Uses Microsoft Edge Neural TTS for natural-sounding narration.
+- **Automatic Subtitles:** Generates subtitles based on the story narration.
+- **Gameplay Background:** Randomly selects a gameplay video from your gameplay folder.
+- **Automatic Rendering:** Combines the narration, subtitles, and gameplay into a vertical video.
+- **Long Story Support:** Splits longer stories into multiple video parts.
+
+## Requirements
+
+- Windows 10 or Windows 11
+- Python 3.10 or newer
+- Internet connection for Edge TTS
+- FFmpeg
+- Gameplay videos in MP4 format
+
+## Installation
+
+1. Download or clone this repository.
+2. Extract the project folder.
+3. Open the project folder in VS Code or File Explorer.
+4. Run `install.bat`.
+5. Wait for the dependencies to finish installing.
+
+## How to Use
+
+### 1. Add Gameplay Videos
+
+Place your gameplay videos inside:
+
+`assets/gameplay/`
+
+Supported format: MP4.
+
+### 2. Prepare Your Reddit Story
+
+Create a `.txt` file and paste your Reddit story inside it.
+
+You can also use the manual input option if available in your version.
+
+### 3. Run the Generator
+
+Double-click:
+
+`run_manual.bat`
+
+Enter your video title, paste your story, and type `.DONE` on a new line when finished.
+
+### 4. Wait for Rendering
+
+The system will automatically:
+
+1. Process your story.
+2. Generate AI voice narration.
+3. Create synchronized subtitles.
+4. Select a random gameplay background.
+5. Render the final vertical video.
+
+### 5. Find Your Videos
+
+Once rendering is complete, check the output folder for your generated videos.
+
+Long stories are automatically divided into multiple parts.
+
+## Project Structure
+
+```text
+automatic-meme-video-generator/
+│
+├── assets/
+│   └── gameplay/
+│
+├── output/
+│
+├── install.bat
+├── run.bat
+├── run_manual.bat
+├── requirements.txt
+├── .env
+└── README.md
+```
+
+## Notes
+
+- An internet connection is required for AI voice generation.
+- Add your own gameplay footage before generating videos.
+- Longer stories may produce multiple video files.
+- Rendering time depends on your computer's performance.
+- This project is intended to automate video creation and reduce manual editing.
+
+## License
+
+For educational and personal projects. Make sure you have permission to use any stories, gameplay footage, and other media included in your generated videos.
