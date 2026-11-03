@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: local-reddit-meme-video-generator
+Version: 1.0.0
+Summary: Generate vertical narrated videos from Reddit text posts or manual text.
+Requires-Python: >=3.10
+Requires-Dist: praw<9.0.0,>=8.0.0
+Requires-Dist: python-dotenv<2.0.0,>=1.0.1
+Requires-Dist: pyttsx3<3.0.0,>=2.98
+Requires-Dist: edge-tts<8.0.0,>=7.3.1
+Requires-Dist: opencv-python<5.0.0,>=4.10.0
+Requires-Dist: Pillow<13.0.0,>=10.4.0
+Requires-Dist: imageio-ffmpeg<1.0.0,>=0.5.1

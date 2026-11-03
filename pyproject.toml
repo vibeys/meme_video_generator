@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-reddit-meme-video-generator"
+version = "1.0.0"
+description = "Generate vertical narrated videos from Reddit text posts or manual text."
+requires-python = ">=3.10"
+dependencies = [
+  "praw>=8.0.0,<9.0.0",
+  "python-dotenv>=1.0.1,<2.0.0",
+  "pyttsx3>=2.98,<3.0.0",
+  "edge-tts>=7.3.1,<8.0.0",
+  "opencv-python>=4.10.0,<5.0.0",
+  "Pillow>=10.4.0,<13.0.0",
+  "imageio-ffmpeg>=0.5.1,<1.0.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
